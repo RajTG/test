@@ -60,7 +60,9 @@ for m in alist:
         mfullname=m[1]+m[2]
     minfinaldict[mfullname]=minn[1]
 
-print(finaldict)
+#2 lines below added to match submitted zip
+json_object = json.dumps(finaldict, indent = 2)   
+print(json_object) 
 
 print(" Most number of times is ",list(finaldict.keys())[0],": ",maxnum)
 
